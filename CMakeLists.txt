@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(factorial_test tests/factorial_test.cpp src/factorial.cpp)
-add_executable(main main.cpp src/factorial.cpp)
+add_executable(biasedCoin_test tests/biasedCoin_test.cpp src/biasedCoin.cpp)
+add_executable(main main.cpp src/biasedCoin.cpp)
 
-target_link_libraries(factorial_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(biasedCoin_test PRIVATE Catch2::Catch2WithMain)
